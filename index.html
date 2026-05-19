@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bienvenido a Retail Odyssey — Guía de incorporación</title>
+<title>Bienvenido a Retail Odyssey — João</title>
 <style>
   :root{
     --bg:#f6f7f9;
@@ -24,10 +24,10 @@
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     background:var(--bg);
     color:var(--ink);
-    line-height:1.55;
+    line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:820px;margin:0 auto;padding:24px 18px 80px}
+  .wrap{max-width:760px;margin:0 auto;padding:24px 18px 80px}
   header.hero{
     background:linear-gradient(135deg,#0b5fff 0%,#1a3a8f 100%);
     color:#fff;
@@ -36,62 +36,64 @@
     margin-bottom:22px;
     box-shadow:0 6px 20px rgba(11,95,255,.18);
   }
+  header.hero .pill{
+    display:inline-block;
+    background:rgba(255,255,255,.2);
+    color:#fff;
+    font-weight:600;
+    font-size:.75rem;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:10px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+  }
   header.hero h1{margin:0 0 6px;font-size:1.55rem;letter-spacing:-0.01em}
   header.hero p{margin:0;opacity:.92;font-size:.98rem}
-  nav.toc{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:14px 18px;
-    margin-bottom:22px;
-  }
-  nav.toc h2{margin:0 0 8px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
-  nav.toc ol{margin:0;padding-left:20px}
-  nav.toc li{margin:3px 0}
-  nav.toc a{color:var(--accent);text-decoration:none}
-  nav.toc a:hover{text-decoration:underline}
   section.card{
     background:var(--card);
     border:1px solid var(--border);
     border-radius:12px;
-    padding:22px 24px;
+    padding:22px 26px;
     margin-bottom:18px;
     box-shadow:0 1px 2px rgba(0,0,0,.03);
   }
   section.card h2{
     margin:0 0 12px;
-    font-size:1.2rem;
+    font-size:1.15rem;
     color:var(--accent);
-    border-bottom:2px solid var(--accent-soft);
-    padding-bottom:8px;
+    display:flex;
+    align-items:center;
+    gap:10px;
   }
   section.card h3{
     margin:18px 0 6px;
     font-size:1rem;
     color:var(--ink);
   }
-  section.card p{margin:8px 0}
+  section.card p{margin:10px 0}
   section.card ul,section.card ol{margin:8px 0;padding-left:22px}
-  section.card li{margin:4px 0}
+  section.card li{margin:5px 0}
   a{color:var(--accent);word-break:break-word}
-  .pill{
-    display:inline-block;
-    background:var(--accent-soft);
-    color:var(--accent);
-    font-weight:600;
-    font-size:.78rem;
-    padding:3px 10px;
-    border-radius:999px;
-    margin-bottom:6px;
-    letter-spacing:.04em;
-    text-transform:uppercase;
+  .step-num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--accent);
+    color:#fff;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    font-weight:700;
+    font-size:.95rem;
+    flex-shrink:0;
   }
   .alert{
     border-left:4px solid var(--warn-border);
     background:var(--warn-bg);
     padding:12px 14px;
     border-radius:6px;
-    margin:12px 0;
+    margin:14px 0;
     font-size:.95rem;
   }
   .info{
@@ -99,7 +101,7 @@
     background:var(--accent-soft);
     padding:12px 14px;
     border-radius:6px;
-    margin:12px 0;
+    margin:14px 0;
     font-size:.95rem;
   }
   .ok{
@@ -107,34 +109,35 @@
     background:var(--ok-bg);
     padding:12px 14px;
     border-radius:6px;
-    margin:12px 0;
+    margin:14px 0;
     font-size:.95rem;
   }
   .eid{
     font-family:"SF Mono",Consolas,Monaco,monospace;
     background:#0f172a;
     color:#fef08a;
-    padding:6px 12px;
+    padding:6px 14px;
     border-radius:6px;
     font-weight:600;
     letter-spacing:.05em;
     display:inline-block;
+    font-size:1.05rem;
   }
   .contact-card{
     background:var(--accent-soft);
     border-radius:10px;
     padding:14px 18px;
-    margin:10px 0;
+    margin:12px 0;
   }
   .contact-card .name{font-weight:700;font-size:1.05rem;margin:0 0 2px}
   .contact-card .role{color:var(--muted);font-size:.9rem;margin:0 0 8px}
-  .contact-card .line{margin:2px 0;font-size:.95rem}
+  .contact-card .line{margin:3px 0;font-size:.95rem}
   .btn{
     display:inline-block;
     background:var(--accent);
     color:#fff !important;
     text-decoration:none;
-    padding:10px 16px;
+    padding:11px 18px;
     border-radius:8px;
     font-weight:600;
     margin:6px 6px 6px 0;
@@ -147,21 +150,6 @@
     border:1.5px solid var(--accent);
   }
   .btn-secondary:hover{background:var(--accent-soft)}
-  .step-number{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    background:var(--accent);
-    color:#fff;
-    width:28px;
-    height:28px;
-    border-radius:50%;
-    font-weight:700;
-    margin-right:8px;
-    font-size:.9rem;
-  }
-  .step-header{display:flex;align-items:center;margin:18px 0 8px}
-  .step-header h3{margin:0;font-size:1.05rem}
   .stores{
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
@@ -174,7 +162,22 @@
     border-radius:6px;
     font-size:.9rem;
     border:1px solid var(--border);
+    text-align:center;
   }
+  .tools-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+    margin:10px 0;
+  }
+  .tool{
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:12px 14px;
+  }
+  .tool .tool-name{font-weight:700;margin:0 0 4px}
+  .tool .tool-desc{color:var(--muted);font-size:.9rem;margin:0 0 8px}
   footer.foot{
     text-align:center;
     color:var(--muted);
@@ -190,11 +193,18 @@
     padding-left:14px;
     margin:14px 0;
   }
+  .signature{
+    margin-top:20px;
+    padding-top:14px;
+    border-top:1px solid var(--border);
+  }
+  .signature p{margin:2px 0;font-size:.95rem}
+  .signature .name{font-weight:700;font-size:1.05rem}
   @media(max-width:560px){
     header.hero{padding:22px 18px}
     header.hero h1{font-size:1.3rem}
-    section.card{padding:18px}
-    .stores{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+    section.card{padding:18px 20px}
+    .stores{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
   }
 </style>
 </head>
@@ -202,150 +212,98 @@
 <div class="wrap">
 
   <header class="hero">
-    <div class="pill" style="background:rgba(255,255,255,.2);color:#fff">Guía de bienvenida</div>
-    <h1>¡Bienvenido al equipo, João!</h1>
-    <p>Toda la información que necesita para sus primeros días en Retail Odyssey y Advantage Solutions, en un solo lugar.</p>
+    <div class="pill">Bienvenida</div>
+    <h1>Bienvenido al equipo, João.</h1>
+    <p>Todo lo que necesitas para empezar — de mi parte, en un solo lugar.</p>
   </header>
 
-  <nav class="toc">
-    <h2>Contenido</h2>
-    <ol>
-      <li><a href="#mensaje">Mensaje de su supervisor</a></li>
-      <li><a href="#credenciales">Sus credenciales del sistema</a></li>
-      <li><a href="#primer-turno">Preparación para su primer turno</a></li>
-      <li><a href="#orientacion">Orientación</a></li>
-      <li><a href="#codigo-vestimenta">Código de vestimenta</a></li>
-      <li><a href="#horario">Horario de trabajo</a></li>
-      <li><a href="#materiales">Materiales que debe traer</a></li>
-      <li><a href="#tiendas">Tiendas asignadas</a></li>
-      <li><a href="#contactos">Contactos importantes</a></li>
-      <li><a href="#enlaces">Enlaces y recursos útiles</a></li>
-    </ol>
-  </nav>
-
-  <!-- ========================= MENSAJE DEL SUPERVISOR ========================= -->
-  <section class="card" id="mensaje">
-    <h2>1. Mensaje de su supervisor</h2>
-    <p>Hola, João Panzo:</p>
-    <p>¡Felicitaciones y bienvenido al equipo de Retail Odyssey! Estamos muy contentos de que se una a nosotros y agradecemos su dedicación durante todo el proceso de contratación.</p>
-    <p>Quiero asegurarme de que tenga una experiencia exitosa durante los últimos pasos de su incorporación.</p>
-    <div class="info">
-      <strong>Importante:</strong> Conserve este documento y guarde los enlaces que contiene como marcadores; los necesitará todos.
-    </div>
-    <p>Recibirá sus credenciales y número de identificación de empleado (EID) dentro de las próximas 24 horas.</p>
-  </section>
-
-  <!-- ========================= CREDENCIALES ========================= -->
-  <section class="card" id="credenciales">
-    <h2>2. Sus credenciales del sistema</h2>
-
-    <h3>Sus credenciales están en camino</h3>
-    <p>Esté atento a un correo electrónico enviado por <strong>"Advantage IT Communications"</strong> con el asunto <em>"Your Advantage System Credentials"</em>. Recibirá estas credenciales una vez que se le asigne un número de empleado (EID) y esté a 24 horas de su fecha de inicio.</p>
-
-    <div class="alert">
-      <strong>¡Es esencial recibir y responder a este correo dentro de 24 horas!</strong>
-    </div>
-
-    <h3>Su número de empleado (EID)</h3>
-    <p><span class="eid">EID: 800678202</span></p>
-
-    <h3>¿Y si pierdo la ventana de 24 horas?</h3>
-    <ol>
-      <li>Vaya a <a href="https://password.asmnet.com/">https://password.asmnet.com</a></li>
-      <li>Seleccione <strong>"Forgot My Password"</strong> (Olvidé mi contraseña)</li>
-      <li>Ingrese su nombre de usuario o su correo electrónico personal</li>
-    </ol>
-
-    <p><a class="btn" href="https://password.asmnet.com/reset.cgi">Restablecer mi contraseña</a></p>
-
-    <div class="alert">
-      <strong>NO INTENTE acceder a los recursos de la empresa hasta que reciba sus credenciales.</strong>
-    </div>
-
-    <p>Para obtener instrucciones detalladas sobre cómo iniciar sesión en los recursos de la empresa, <a href="https://drive.google.com/file/d/127lASxX58ajdAlhYzvL6kouNjzuGjRnT/view?usp=drive_link">haga clic aquí</a>.</p>
-
-    <h3>Nota sobre Microsoft</h3>
-    <p>Una vez que configure su contraseña, es posible que se le pida iniciar sesión con su cuenta de Microsoft de la empresa (por ejemplo, <em>nombre.apellido@youradv.com</em> con la contraseña que acaba de restablecer) para completar la configuración.</p>
-    <p>¿Aún no puede iniciar sesión? <a href="https://vimeo.com/manage/videos/1161902444/cfa85876e0">Vea este video con instrucciones</a> sobre cómo acceder a la aplicación.</p>
-  </section>
-
-  <!-- ========================= PRIMER TURNO ========================= -->
-  <section class="card" id="primer-turno">
-    <h2>3. Preparación para su primer turno</h2>
-    <p>Sabemos que comenzar un nuevo puesto puede sentirse abrumador. Los siguientes pasos lo guiarán para empezar con buen pie. Por favor, revíselos antes de su fecha de inicio.</p>
-
-    <div class="step-header"><span class="step-number">1</span><h3>Configure sus credenciales de Advantage</h3></div>
-    <p>DEBE restablecer su contraseña antes de continuar al paso 2. Siga las instrucciones de su correo <em>"Advantage Systems Credentials"</em>. Si aún no lo ha hecho, use el enlace de arriba para hacerlo ahora.</p>
-
-    <div class="step-header"><span class="step-number">2</span><h3>Prepárese para su primer turno</h3></div>
-    <p>Acceda a la página principal del nuevo empleado, donde encontrará información sobre los próximos pasos, requisitos de capacitación y otros recursos importantes para su puesto.</p>
-    <div class="alert">
-      <strong>Tendrá 2 días</strong> para completar la capacitación requerida que aparece en esa página.
-    </div>
-    <p><a class="btn" href="https://advantagesolutionsnet.sharepoint.com/:u:/r/sites/SASConnects/SitePages/SAS-Onboarding.aspx?csf=1&web=1&e=X3fyU9">Página principal del nuevo empleado</a></p>
-
-    <div class="step-header"><span class="step-number">3</span><h3>Conozca a su equipo de apoyo</h3></div>
-    <p>Su supervisor manejará su programación, dotación de personal y responsabilidades diarias. Vea la sección de contactos más abajo.</p>
-  </section>
-
-  <!-- ========================= ORIENTACIÓN ========================= -->
-  <section class="card" id="orientacion">
-    <h2>4. Orientación</h2>
-    <div class="ok">
-      <strong>NO necesita credenciales para acceder a la orientación.</strong> Simplemente ingrese su nombre cuando se le pida.
-    </div>
-    <p>Asista a la orientación en la próxima sesión virtual disponible por Microsoft Teams. Las sesiones se realizan diariamente a las <strong>9:00 AM</strong> o a la <strong>1:00 PM</strong>.</p>
-    <p><a class="btn" href="https://drive.google.com/file/d/1AhheGIMO9Ucs_KCIofhshlcu7MwuwCRP/view?usp=sharing">Instrucciones detalladas para la orientación</a></p>
-    <div class="alert">
-      <strong>Debe completar la orientación obligatoria antes de poder ser programado para cualquier turno de trabajo.</strong>
-    </div>
-  </section>
-
-  <!-- ========================= QUÉ HACEMOS ========================= -->
+  <!-- ==================== INTRO ==================== -->
   <section class="card">
-    <h2>5. ¿Qué hacemos?</h2>
-    <p>En resumen: reorganizamos productos en los estantes de las tiendas.</p>
-    <p>Para ver cómo es un día en la vida de un <em>merchandiser</em>, vea este video:</p>
-    <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/17bUGWGmm4jK4suOJzYfdMx8II4Cp9tBe/view?usp=drive_link">Ver: Trabajando en Retail Odyssey</a></p>
+    <p>Hola João,</p>
+    <p>Soy Tyson, tu supervisor. Quería darte la bienvenida al equipo y mandarte todo lo que necesitas para arrancar — sin tener que buscar entre varios correos viejos.</p>
+    <p>El plan es sencillo: <strong>(1)</strong> restablecer tu contraseña, <strong>(2)</strong> asistir a la orientación, y <strong>(3)</strong> empezar a trabajar. Te explico cada paso a continuación.</p>
+    <p>Guarda esta página o agrégala a tus marcadores — contiene todos los enlaces que vas a necesitar.</p>
   </section>
 
-  <!-- ========================= CÓDIGO DE VESTIMENTA ========================= -->
-  <section class="card" id="codigo-vestimenta">
-    <h2>6. Código de vestimenta</h2>
+  <!-- ==================== PASO 1 ==================== -->
+  <section class="card">
+    <h2><span class="step-num">1</span> Restablece tu contraseña</h2>
+
+    <p>Ya recibiste un correo de <em>"Advantage IT Communications"</em> con tus credenciales del sistema. La ventana de 24 horas para usar la contraseña original ya pasó, así que vamos directo a recuperarla.</p>
+
+    <h3>Tu número de empleado (EID)</h3>
+    <p><span class="eid">800678202</span></p>
+    <p>Anótalo — lo vas a necesitar para todo.</p>
+
+    <h3>Cómo restablecer la contraseña</h3>
+    <ol>
+      <li>Entra al portal: <a href="https://password.asmnet.com/">password.asmnet.com</a></li>
+      <li>Haz clic en <strong>"Forgot My Password"</strong> (Olvidé mi contraseña)</li>
+      <li>Ingresa tu nombre de usuario o tu correo personal</li>
+      <li>Sigue las instrucciones que te llegarán al correo</li>
+    </ol>
+
+    <p><a class="btn" href="https://password.asmnet.com/">Ir a "Forgot My Password"</a></p>
+
+    <div class="info">
+      <strong>Después de restablecerla:</strong> es posible que el sistema te pida iniciar sesión con tu cuenta Microsoft de la empresa (algo como <em>joao.panzo@youradv.com</em>) usando tu nueva contraseña. Si tienes problemas para entrar, <a href="https://vimeo.com/manage/videos/1161902444/cfa85876e0">aquí hay un video con instrucciones</a>.
+    </div>
+  </section>
+
+  <!-- ==================== PASO 2 ==================== -->
+  <section class="card">
+    <h2><span class="step-num">2</span> Asiste a la orientación</h2>
+
+    <p>La orientación es obligatoria — <strong>no te puedo asignar turnos hasta que la completes</strong>. La buena noticia es que es virtual y se ofrece todos los días, así que puedes hacerla pronto.</p>
+
+    <div class="ok">
+      <strong>No necesitas tus credenciales para la orientación.</strong> Solo ingresa tu nombre cuando te lo pidan.
+    </div>
+
+    <h3>Horarios disponibles</h3>
+    <p>Sesiones virtuales por Microsoft Teams, todos los días:</p>
+    <ul>
+      <li><strong>9:00 AM</strong></li>
+      <li><strong>1:00 PM</strong></li>
+    </ul>
+
+    <p><a class="btn" href="https://drive.google.com/file/d/1AhheGIMO9Ucs_KCIofhshlcu7MwuwCRP/view?usp=sharing">Instrucciones para unirse a la orientación</a></p>
+
+    <p>Apenas termines la orientación, avísame por mensaje de texto y empezamos a programar tus turnos.</p>
+  </section>
+
+  <!-- ==================== PASO 3 ==================== -->
+  <section class="card">
+    <h2><span class="step-num">3</span> Prepárate para tu primer turno</h2>
+
+    <p>Una vez completada la orientación, vamos a coordinar tu primer día. Esto es lo que necesitas saber de antemano:</p>
+
+    <h3>Horario habitual</h3>
+    <p>Trabajamos de <strong>5:00 AM a 2:00 PM, de lunes a viernes</strong>. Siempre hay excepciones, así que no asumas un número fijo de horas a la semana.</p>
+
+    <h3>Código de vestimenta</h3>
     <ul>
       <li>Zapatos cerrados</li>
-      <li>Pantalones</li>
-      <li>Camisa polo de color sólido, sin otros logotipos (pronto se le entregará una camisa de la empresa)</li>
+      <li>Pantalones (no shorts)</li>
+      <li>Camisa polo de color sólido, sin logotipos de otras marcas</li>
     </ul>
-  </section>
+    <p><em>La camisa oficial de la empresa te la entregaré pronto.</em></p>
 
-  <!-- ========================= HORARIO ========================= -->
-  <section class="card" id="horario">
-    <h2>7. Horario de trabajo</h2>
-    <p>Nuestro horario habitual es de <strong>5:00 AM a 2:00 PM, de lunes a viernes</strong>.</p>
-    <div class="info">
-      Siempre hay excepciones; por favor, no espere un número fijo de horas a la semana.
-    </div>
-    <p>No podré programarlo para ningún turno hasta que haya completado la orientación.</p>
-  </section>
-
-  <!-- ========================= MATERIALES ========================= -->
-  <section class="card" id="materiales">
-    <h2>8. Materiales que debe traer</h2>
+    <h3>Qué traer</h3>
     <ul>
       <li>Cinta métrica</li>
       <li>Bolígrafo</li>
       <li>Marcador resaltador</li>
-      <li>Guantes táctiles que no restrinjan el movimiento de los dedos</li>
-      <li>Escalera plegable (si tiene una de sobra)</li>
+      <li>Guantes táctiles (que no restrinjan el movimiento de los dedos)</li>
+      <li>Escalera plegable (si tienes una de sobra)</li>
+      <li>Rodilleras o almohadilla de jardinería <em>(recomendado, no obligatorio)</em></li>
     </ul>
-    <p><em>Recomendación adicional:</em> rodilleras o una almohadilla de jardinería si tiene una.</p>
-  </section>
 
-  <!-- ========================= TIENDAS ========================= -->
-  <section class="card" id="tiendas">
-    <h2>9. Tiendas asignadas</h2>
-    <p>Superviso diez tiendas Fred Meyer en el área central de Seattle:</p>
+    <h3>Qué hacemos</h3>
+    <p>En pocas palabras: reorganizamos productos en los estantes de las tiendas. Si quieres ver cómo es un día típico, <a href="https://drive.google.com/file/d/17bUGWGmm4jK4suOJzYfdMx8II4Cp9tBe/view?usp=drive_link">aquí hay un video corto</a>.</p>
+
+    <h3>Dónde vas a trabajar</h3>
+    <p>Cubro diez tiendas Fred Meyer en el área central de Seattle. Te asignaré tiendas según la programación de cada semana:</p>
     <div class="stores">
       <div>Burien</div>
       <div>N. Bensen Plaza</div>
@@ -360,17 +318,68 @@
     </div>
   </section>
 
-  <!-- ========================= CONTACTOS ========================= -->
-  <section class="card" id="contactos">
-    <h2>10. Contactos importantes</h2>
+  <!-- ==================== HERRAMIENTAS ==================== -->
+  <section class="card">
+    <h2>Herramientas que vas a usar</h2>
+    <p>Estos son los sistemas principales del trabajo. No te preocupes por aprenderlos todos hoy — los iremos cubriendo cuando los necesites.</p>
+
+    <div class="tools-grid">
+
+      <div class="tool">
+        <p class="tool-name">PROD (la tableta / SAS App)</p>
+        <p class="tool-desc">Aquí ves tu horario, registras tu tiempo, llevas seguimiento del trabajo y configuras tu PIN.</p>
+        <a class="btn btn-secondary" href="https://prod.sasretail.com/en/field/">Abrir PROD</a>
+        <a class="btn btn-secondary" href="https://drive.google.com/file/d/1z__YVE0tKlPYfMkWCDNHs3d_Tvm2kqNq/view?usp=drivesdk">Cómo configurar tu PIN</a>
+      </div>
+
+      <div class="tool">
+        <p class="tool-name">Oracle</p>
+        <p class="tool-desc">Información personal, beneficios, talones de pago, formularios fiscales, depósito directo y solicitudes de tiempo libre.</p>
+        <a class="btn btn-secondary" href="https://hrispub.asmnet.com/">Abrir Oracle</a>
+      </div>
+
+      <div class="tool">
+        <p class="tool-name">Connects Hub</p>
+        <p class="tool-desc">Centro de recursos de Advantage — enlaces, grupos, comunidad de empleados.</p>
+        <a class="btn btn-secondary" href="https://advantagesolutionsnet.sharepoint.com/sites/ConnectsHub">Abrir Connects Hub</a>
+      </div>
+
+      <div class="tool">
+        <p class="tool-name">Hoja de consejos del asociado</p>
+        <p class="tool-desc">Referencia rápida: acceso a la cuenta, restablecimiento de contraseña, nómina, contactos clave.</p>
+        <a class="btn btn-secondary" href="https://drive.google.com/file/d/1WvagulEV4awYEoBZg0U8mPd3qmo8-k4l/view?usp=drive_link">Abrir hoja de consejos</a>
+      </div>
+
+      <div class="tool">
+        <p class="tool-name">Manual del asociado</p>
+        <p class="tool-desc">Políticas, beneficios y reglas de Advantage Solutions.</p>
+        <a class="btn btn-secondary" href="https://drive.google.com/file/d/1LIHte4IUkG0k8MaAt9MV-PfTpFQO8kRn/view?usp=sharing">Abrir manual</a>
+      </div>
+
+      <div class="tool">
+        <p class="tool-name">Calendario de pagos 2026</p>
+        <p class="tool-desc">Días festivos y fechas de pago para el año.</p>
+        <a class="btn btn-secondary" href="https://d6ewasupervisor-netizen.github.io/PayrollCalendar/">Abrir calendario</a>
+      </div>
+
+    </div>
+
+    <div class="info">
+      <strong>Recomendación:</strong> apenas tengas acceso a Oracle, configura el depósito directo y confirma que tu dirección esté correcta. Es la manera más rápida de recibir tu primer cheque sin retrasos.
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTOS ==================== -->
+  <section class="card">
+    <h2>Cómo contactarme — y a quién acudir</h2>
+
+    <p>Mi método preferido es <strong>mensaje de texto</strong>, pero puedes llamarme si lo necesitas. Estoy disponible de <strong>6:00 AM a 3:00 PM, de lunes a viernes</strong>, y ocasionalmente por correo fuera de ese horario.</p>
 
     <div class="contact-card">
       <p class="name">Tyson Gauthier</p>
       <p class="role">Supervisor — Central Seattle, Fred Meyer</p>
-      <p class="line">📱 Celular: <a href="tel:+15095727660">(509) 572-7660</a> <em>(método preferido: mensaje de texto)</em></p>
+      <p class="line">📱 Celular / texto: <a href="tel:+15095727660">(509) 572-7660</a></p>
       <p class="line">✉️ Correo: <a href="mailto:tyson.gauthier@retailodyssey.com">tyson.gauthier@retailodyssey.com</a></p>
-      <p class="line">📠 Fax: (888) 522-7202</p>
-      <p class="line">🕒 Horario de oficina: 6:00 AM a 3:00 PM, lunes a viernes</p>
     </div>
 
     <div class="contact-card">
@@ -382,65 +391,29 @@
 
     <div class="contact-card">
       <p class="name">Centro de Apoyo al Asociado</p>
-      <p class="role">Soporte de campo, IT, RH, beneficios y nómina</p>
+      <p class="role">Para temas de IT, RH, beneficios, nómina o soporte de campo</p>
       <p class="line">📞 Teléfono: <a href="tel:+18889004276">1-888-900-4276</a></p>
-      <p class="line">🎫 Mesa de ayuda: <a href="https://helpdesk.asmnet.com/">https://helpdesk.asmnet.com</a></p>
+      <p class="line">🎫 Mesa de ayuda: <a href="https://helpdesk.asmnet.com/">helpdesk.asmnet.com</a></p>
     </div>
 
-    <p class="quote">"Para cultivar la felicidad, siembre gratitud." — Tyson</p>
+    <p>Para cualquier cosa relacionada con tu programación, día a día, o dudas sobre el trabajo — escríbeme a mí directamente.</p>
   </section>
 
-  <!-- ========================= ENLACES ÚTILES ========================= -->
-  <section class="card" id="enlaces">
-    <h2>11. Enlaces y recursos útiles</h2>
-
-    <h3>Hoja de consejos para el asociado</h3>
-    <p>Contiene información esencial y contactos importantes: ayuda para acceder a su cuenta, restablecimiento de contraseña, información de nómina, etc.</p>
-    <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/1WvagulEV4awYEoBZg0U8mPd3qmo8-k4l/view?usp=drive_link">Abrir hoja de consejos</a></p>
-
-    <h3>Manual del asociado</h3>
-    <p>Información detallada sobre cómo trabajar para Advantage Solutions.</p>
-    <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/1LIHte4IUkG0k8MaAt9MV-PfTpFQO8kRn/view?usp=sharing">Abrir manual del asociado</a></p>
-
-    <h3>Calendario de días festivos y pagos 2026</h3>
-    <p><a class="btn btn-secondary" href="https://d6ewasupervisor-netizen.github.io/PayrollCalendar/">Calendario 2026</a></p>
-
-    <h3>Connects Hub</h3>
-    <p>Centro de recursos de Advantage. Encontrará enlaces a casi todo lo relacionado con la empresa, además de oportunidades para conectar con otros empleados y unirse a grupos.</p>
-    <p><a class="btn btn-secondary" href="https://advantagesolutionsnet.sharepoint.com/sites/ConnectsHub">Abrir Connects Hub</a></p>
-
-    <h3>Oracle</h3>
-    <p>Donde puede gestionar su información personal, beneficios, solicitudes de tiempo libre, talones de pago, información tributaria, depósito directo y otros detalles.</p>
-    <p><a class="btn btn-secondary" href="https://hrispub.asmnet.com/">Abrir Oracle</a></p>
-
-    <h3>PROD (tableta / SAS App / Retail Logic)</h3>
-    <p>Aquí encontrará su horario, registrará su tiempo, hará seguimiento de su trabajo y completará encuestas. Para verificar que sus horas estén registradas correctamente: ingrese al sitio, haga clic en el avatar de la esquina superior derecha y seleccione <em>"My Profile"</em>. Ahí también configurará su PIN.</p>
-    <p><a class="btn btn-secondary" href="https://prod.sasretail.com/en/field/">Abrir PROD</a> &nbsp; <a class="btn btn-secondary" href="https://drive.google.com/file/d/1z__YVE0tKlPYfMkWCDNHs3d_Tvm2kqNq/view?usp=drivesdk">Instrucciones para configurar el PIN</a></p>
-
-    <h3>Panel de bienvenida (Advantage Careers)</h3>
-    <p><a class="btn btn-secondary" href="https://careers.advantagesolutions.net/welcome/">Abrir panel de bienvenida</a></p>
-  </section>
-
-  <!-- ========================= PRÓXIMOS PASOS ========================= -->
+  <!-- ==================== CIERRE ==================== -->
   <section class="card">
-    <h2>12. Próximos pasos y recomendaciones</h2>
+    <p>Eso es todo lo que necesitas para empezar, João. Si tienes cualquier pregunta — por más pequeña que parezca — escríbeme.</p>
+    <p>Nos vemos pronto.</p>
 
-    <h3>Pasos obligatorios</h3>
-    <ul>
-      <li>Complete la orientación obligatoria antes de ser programado para cualquier turno.</li>
-    </ul>
-
-    <h3>Pasos recomendados</h3>
-    <ul>
-      <li>Configure el depósito directo con su banco; es la forma más eficiente de recibir sus pagos.</li>
-      <li>Verifique que la información de su dirección esté correcta para asegurar la entrega de su primer cheque.</li>
-      <li>Puede usar el enlace de Oracle (arriba) para completar ambas tareas.</li>
-    </ul>
+    <div class="signature">
+      <p class="name">— Tyson Gauthier</p>
+      <p>Supervisor, Retail Odyssey · Fred Meyer</p>
+      <p>📱 (509) 572-7660 · ✉️ tyson.gauthier@retailodyssey.com</p>
+      <p class="quote">"Para cultivar la felicidad, siembra gratitud."</p>
+    </div>
   </section>
 
   <footer class="foot">
-    <p>Si recibe esta información fuera del horario laboral habitual: léala cuando le convenga.</p>
-    <p>— Equipo Retail Odyssey · Advantage Solutions</p>
+    <p>Si recibes este mensaje fuera del horario laboral, léelo cuando te convenga.</p>
   </footer>
 
 </div>
