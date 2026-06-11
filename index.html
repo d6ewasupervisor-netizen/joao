@@ -200,6 +200,52 @@
   }
   .signature p{margin:2px 0;font-size:.95rem}
   .signature .name{font-weight:700;font-size:1.05rem}
+  .banner{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
+    background:linear-gradient(135deg,#1b8a3a 0%,#0e6b2f 100%);
+    color:#fff;
+    border-radius:14px;
+    padding:18px 20px;
+    margin-bottom:18px;
+    box-shadow:0 6px 20px rgba(27,138,58,.22);
+  }
+  .banner .banner-icon{
+    font-size:1.8rem;
+    flex-shrink:0;
+  }
+  .banner .banner-text{flex:1;min-width:200px}
+  .banner .banner-text .new-pill{
+    display:inline-block;
+    background:rgba(255,255,255,.25);
+    font-weight:700;
+    font-size:.7rem;
+    padding:2px 9px;
+    border-radius:999px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+  .banner .banner-text h2{margin:0;font-size:1.1rem;line-height:1.35}
+  .banner .banner-text p{margin:3px 0 0;font-size:.9rem;opacity:.92}
+  .banner .btn-banner{
+    display:inline-block;
+    background:#fff;
+    color:#0e6b2f !important;
+    text-decoration:none;
+    font-weight:700;
+    padding:11px 18px;
+    border-radius:8px;
+    font-size:.95rem;
+    white-space:nowrap;
+  }
+  .banner .btn-banner:hover{background:#e8f5e9}
+  @media(max-width:560px){
+    .banner{padding:16px}
+    .banner .btn-banner{width:100%;text-align:center}
+  }
   @media(max-width:560px){
     header.hero{padding:22px 18px}
     header.hero h1{font-size:1.3rem}
@@ -210,6 +256,17 @@
 </head>
 <body>
 <div class="wrap">
+
+  <!-- ==================== DEPÓSITO DIRECTO (NUEVO) ==================== -->
+  <a class="banner" href="Direct_Deposit_Spanish_Translation_2026-06-11_17-06-51.html" style="text-decoration:none">
+    <span class="banner-icon">💵</span>
+    <span class="banner-text">
+      <span class="new-pill">Nuevo</span>
+      <h2>Guía en español: cómo configurar tu depósito directo</h2>
+      <p>Paso a paso con capturas de pantalla, traducido al español — 13 pasos en Oracle.</p>
+    </span>
+    <span class="btn-banner">Abrir la guía →</span>
+  </a>
 
   <header class="hero">
     <div class="pill">Bienvenida</div>
