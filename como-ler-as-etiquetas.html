@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Como Ler as Etiquetas e Localizações — Guia de Campo</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; color:#1f2937; background:#f4f6fa; font-size:16px; line-height:1.55; }
+  .page { max-width:760px; margin:0 auto; background:#ffffff; }
+  .hdr {
+    background:#0b5fff;
+    background:-webkit-linear-gradient(left,#0b5fff,#1a3a8f);
+    background:linear-gradient(90deg,#0b5fff,#1a3a8f);
+    color:#ffffff; padding:26px 24px 20px 24px;
+  }
+  .hdr h1 { font-size:25px; letter-spacing:.3px; }
+  .hdr .sub { font-size:13px; opacity:.92; margin-top:6px; }
+  .backlink { display:inline-block; margin:0 0 10px 0; color:#ffffff; font-size:13px; font-weight:bold; text-decoration:none; opacity:.92; }
+  .backlink:hover { opacity:1; text-decoration:underline; }
+  .content { padding:20px 22px 30px 22px; }
+  h2 { font-size:19px; color:#1a3a8f; margin:26px 0 8px 0; border-bottom:2px solid #dbe4ff; padding-bottom:5px; }
+  h2:first-child { margin-top:4px; }
+  p { margin:8px 0; }
+  .big { font-size:17px; }
+  .rule {
+    background:#eef3ff; border-left:5px solid #0b5fff; padding:12px 14px; margin:14px 0; border-radius:0 8px 8px 0;
+    font-weight:bold; color:#12275e;
+  }
+  .tip {
+    background:#ecfdf3; border-left:5px solid #16a34a; padding:12px 14px; margin:14px 0; border-radius:0 8px 8px 0;
+  }
+  .fig { margin:16px 0; text-align:center; }
+  .fig svg { max-width:100%; height:auto; }
+  .figcap { font-size:13px; color:#6b7280; margin-top:6px; font-style:italic; }
+  ol.steps { margin:10px 0 10px 22px; }
+  ol.steps li { margin:8px 0; }
+  .ftr {
+    border-top:3px solid #1a3a8f; padding:14px 22px 22px 22px; font-size:13px; color:#374151; background:#fafbff;
+  }
+  .ftr .quote { font-style:italic; color:#1a3a8f; margin-bottom:6px; }
+  .ftr .home { margin-top:10px; }
+  .ftr .home a { color:#0b5fff; font-weight:bold; text-decoration:none; }
+  .ftr .home a:hover { text-decoration:underline; }
+  @media print {
+    body { background:#ffffff; }
+    .page { max-width:100%; }
+    .ftr { display:none; }
+    .backlink { display:none; }
+    h2 { page-break-after:avoid; }
+    .fig, .rule, .tip { page-break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="hdr">
+  <a class="backlink" href="index.html">&#8592; Voltar &agrave; p&aacute;gina principal</a>
+  <h1>Como Ler as Etiquetas e Localizações — Guia de Campo</h1>
+  <div class="sub">Retail Odyssey &bull; Fred Meyer, Central Seattle</div>
+</div>
+
+<div class="content">
+
+<h2>1. Onde Está o Código de Localização</h2>
+<p class="big">Cada etiqueta de prateleira tem um pequeno <b>código de localização</b> impresso — normalmente por baixo do preço unitário, no lado esquerdo. Esse código diz-te exatamente onde o artigo pertence: <b>corredor, lado, bay, prateleira e posição</b>.</p>
+
+<div class="fig">
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Etiqueta com código de localização">
+  <rect x="120" y="20" width="340" height="180" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+  <text x="140" y="52" font-family="Arial" font-size="14" font-weight="bold" fill="#111">CRUNCHY OAT CEREAL 18 OZ</text>
+  <text x="380" y="110" text-anchor="end" font-family="Arial" font-size="42" font-weight="bold" fill="#111">4.99</text>
+  <rect x="138" y="80" width="88" height="34" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <text x="182" y="96" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#111">27.7&#162;</text>
+  <text x="182" y="109" text-anchor="middle" font-family="Arial" font-size="8" fill="#111">PER OUNCE</text>
+  <text x="140" y="136" font-family="Arial" font-size="15" font-weight="bold" fill="#111">20L 3 2 3</text>
+  <ellipse cx="176" cy="131" rx="52" ry="16" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <line x1="228" y1="126" x2="560" y2="90" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="560" cy="90" r="3" fill="#dc2626"/>
+  <text x="568" y="86" font-family="Arial" font-size="14" font-weight="bold" fill="#dc2626">C&oacute;digo de</text>
+  <text x="568" y="102" font-family="Arial" font-size="14" font-weight="bold" fill="#dc2626">localiza&ccedil;&atilde;o</text>
+  <text x="140" y="176" font-family="Arial" font-size="10" fill="#6b7280">|||||||||||||||||||||||||||</text>
+  <text x="300" y="176" font-family="Arial" font-size="10" fill="#6b7280">09/28/26</text>
+</svg>
+<div class="figcap">O código de localização fica por baixo da caixa do preço unitário, no lado esquerdo da etiqueta.</div>
+</div>
+
+<h2>2. Como Separar o Código</h2>
+<p>Lê da esquerda para a direita — <b>corredor, lado, bay, prateleira, posição</b>:</p>
+
+<div class="fig">
+<svg viewBox="0 0 700 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomia do código de localização">
+  <text x="110" y="80" font-family="Courier New, monospace" font-size="56" font-weight="bold" fill="#0b5fff">20</text>
+  <text x="185" y="80" font-family="Courier New, monospace" font-size="56" font-weight="bold" fill="#16a34a">L</text>
+  <text x="265" y="80" font-family="Courier New, monospace" font-size="56" font-weight="bold" fill="#b45309">3</text>
+  <text x="345" y="80" font-family="Courier New, monospace" font-size="56" font-weight="bold" fill="#7c3aed">2</text>
+  <text x="425" y="80" font-family="Courier New, monospace" font-size="56" font-weight="bold" fill="#dc2626">3</text>
+  <line x1="140" y1="95" x2="140" y2="120" stroke="#0b5fff" stroke-width="2"/>
+  <text x="140" y="140" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#0b5fff">Corredor 20</text>
+  <text x="140" y="157" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">n&uacute;mero pendurado</text>
+  <text x="140" y="172" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">por cima do corredor</text>
+  <line x1="202" y1="95" x2="202" y2="185" stroke="#16a34a" stroke-width="2"/>
+  <text x="190" y="205" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#16a34a">Lado esquerdo (L)</text>
+  <text x="190" y="222" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">de costas para a frente da loja:</text>
+  <text x="190" y="237" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">os lados correspondem aos bra&ccedil;os</text>
+  <line x1="282" y1="95" x2="282" y2="120" stroke="#b45309" stroke-width="2"/>
+  <text x="282" y="140" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#b45309">Bay 3</text>
+  <text x="282" y="157" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">o Bay 1 fica &agrave; esquerda,</text>
+  <text x="282" y="172" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">conta para a direita</text>
+  <line x1="362" y1="95" x2="362" y2="185" stroke="#7c3aed" stroke-width="2"/>
+  <text x="378" y="205" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#7c3aed">Prateleira 2 (Shelf)</text>
+  <text x="378" y="222" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">a prateleira 1 &eacute; a de baixo,</text>
+  <text x="378" y="237" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">conta para cima</text>
+  <line x1="442" y1="95" x2="442" y2="120" stroke="#dc2626" stroke-width="2"/>
+  <text x="452" y="140" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#dc2626">Posi&ccedil;&atilde;o 3</text>
+  <text x="452" y="157" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">3.&ordm; artigo a partir da</text>
+  <text x="452" y="172" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">esquerda nessa prateleira</text>
+</svg>
+<div class="figcap">20L 3 2 3 = corredor 20, lado esquerdo, bay 3, prateleira 2, posição 3.</div>
+</div>
+
+<div class="rule">Corredor &#8594; Lado &#8594; Bay &#8594; Prateleira &#8594; Posi&ccedil;&atilde;o. Do grande para o pequeno — o código leva-te da loja inteira até um único artigo.</div>
+
+<h2>3. As Prateleiras Contam-se de Baixo Para Cima</h2>
+<p class="big"><b>A prateleira 1 é sempre a de baixo.</b> Conta para cima: 2, 3, 4, 5... Se um bay tem 5 prateleiras, a prateleira 5 é a de cima.</p>
+
+<h2>4. A Posição Conta-se da Esquerda Para a Direita</h2>
+<p class="big">O último número é a <b>posição</b> — o lugar do artigo a contar da esquerda. <b>O primeiro artigo na prateleira é a posição 1.</b></p>
+
+<div class="fig">
+<svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Numeração de bay, prateleira e posição">
+  <text x="120" y="60" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#9ca3af">Bay 1</text>
+  <text x="300" y="60" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#9ca3af">Bay 2</text>
+  <text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#b45309">Bay 3</text>
+  <rect x="30" y="70" width="180" height="265" fill="#f9fafb" stroke="#9ca3af" stroke-width="2"/>
+  <rect x="30" y="90" width="180" height="8" fill="#cbd5e1"/>
+  <rect x="30" y="140" width="180" height="8" fill="#cbd5e1"/>
+  <rect x="30" y="190" width="180" height="8" fill="#cbd5e1"/>
+  <rect x="30" y="240" width="180" height="8" fill="#cbd5e1"/>
+  <rect x="30" y="295" width="180" height="8" fill="#cbd5e1"/>
+  <text x="120" y="175" text-anchor="middle" font-family="Arial" font-size="13" fill="#9ca3af">n&atilde;o &eacute; este bay —</text>
+  <text x="120" y="192" text-anchor="middle" font-family="Arial" font-size="13" fill="#9ca3af">continua a contar</text>
+  <rect x="210" y="70" width="180" height="265" fill="#f9fafb" stroke="#9ca3af" stroke-width="2"/>
+  <rect x="210" y="90" width="180" height="8" fill="#cbd5e1"/>
+  <rect x="210" y="140" width="180" height="8" fill="#cbd5e1"/>
+  <rect x="210" y="190" width="180" height="8" fill="#cbd5e1"/>
+  <rect x="210" y="240" width="180" height="8" fill="#cbd5e1"/>
+  <rect x="210" y="295" width="180" height="8" fill="#cbd5e1"/>
+  <text x="300" y="175" text-anchor="middle" font-family="Arial" font-size="13" fill="#9ca3af">n&atilde;o &eacute; este bay —</text>
+  <text x="300" y="192" text-anchor="middle" font-family="Arial" font-size="13" fill="#9ca3af">continua a contar</text>
+  <rect x="390" y="70" width="220" height="265" fill="#f3f4f6" stroke="#374151" stroke-width="3"/>
+  <rect x="390" y="90" width="220" height="8" fill="#374151"/>
+  <rect x="390" y="140" width="220" height="8" fill="#374151"/>
+  <rect x="390" y="190" width="220" height="8" fill="#374151"/>
+  <rect x="390" y="240" width="220" height="8" fill="#374151"/>
+  <rect x="390" y="295" width="220" height="8" fill="#374151"/>
+  <text x="20" y="304" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#7c3aed">1</text>
+  <text x="20" y="249" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#7c3aed">2</text>
+  <text x="20" y="199" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#7c3aed">3</text>
+  <text x="20" y="149" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#7c3aed">4</text>
+  <text x="20" y="99" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#7c3aed">5</text>
+  <line x1="6" y1="300" x2="6" y2="95" stroke="#7c3aed" stroke-width="3"/>
+  <polygon points="6,95 0,108 12,108" fill="#7c3aed"/>
+  <rect x="398" y="198" width="38" height="42" fill="#dbe4ff" stroke="#1a3a8f" stroke-width="2"/>
+  <rect x="440" y="198" width="38" height="42" fill="#dbe4ff" stroke="#1a3a8f" stroke-width="2"/>
+  <rect x="482" y="198" width="38" height="42" fill="#fecaca" stroke="#dc2626" stroke-width="3"/>
+  <rect x="524" y="198" width="38" height="42" fill="#dbe4ff" stroke="#1a3a8f" stroke-width="2"/>
+  <rect x="566" y="198" width="38" height="42" fill="#dbe4ff" stroke="#1a3a8f" stroke-width="2"/>
+  <text x="417" y="224" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1a3a8f">1</text>
+  <text x="459" y="224" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1a3a8f">2</text>
+  <text x="501" y="224" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#dc2626">3</text>
+  <text x="543" y="224" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1a3a8f">4</text>
+  <text x="585" y="224" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1a3a8f">5</text>
+  <rect x="486" y="240" width="30" height="8" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+  <text x="400" y="24" font-family="Arial" font-size="16" font-weight="bold" fill="#dc2626">20L 3 2 3</text>
+  <text x="482" y="24" font-family="Arial" font-size="13" fill="#374151">&#8594; Bay 3, Prateleira 2, Posi&ccedil;&atilde;o 3</text>
+  <line x1="501" y1="30" x2="501" y2="196" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="501,196 494,183 508,183" fill="#dc2626"/>
+  <line x1="398" y1="262" x2="604" y2="262" stroke="#dc2626" stroke-width="3"/>
+  <polygon points="604,262 590,255 590,269" fill="#dc2626"/>
+  <text x="501" y="280" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#dc2626">posi&ccedil;&atilde;o: esquerda &#8594; direita</text>
+  <line x1="40" y1="360" x2="590" y2="360" stroke="#b45309" stroke-width="3"/>
+  <polygon points="590,360 576,353 576,367" fill="#b45309"/>
+  <text x="315" y="382" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#b45309">os bays contam-se da esquerda &#8594; direita: 1, 2, 3...</text>
+</svg>
+<div class="figcap">O exemplo completo: 20L 3 2 3 — passa os bays 1 e 2. No bay 3, a etiqueta vai na prateleira 2 (a segunda a contar de baixo), por baixo do 3.º artigo a contar da esquerda.</div>
+</div>
+
+<h2>5. Como Medir as Prateleiras</h2>
+<p>Quando um planograma indica alturas de prateleiras, mede <b>do topo da prateleira de baixo até à base da prateleira de cima</b>. Os encaixes na coluna de trás — onde as prateleiras prendem — estão espaçados a <b>intervalos de 1 polegada (1 inch)</b>, por isso podes contar os encaixes para acertar as alturas rapidamente.</p>
+
+<div class="fig">
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama de medição de prateleiras">
+  <rect x="120" y="20" width="26" height="220" fill="#d1d5db" stroke="#374151" stroke-width="2"/>
+  <g fill="#374151">
+    <rect x="128" y="32" width="10" height="4"/><rect x="128" y="52" width="10" height="4"/>
+    <rect x="128" y="72" width="10" height="4"/><rect x="128" y="92" width="10" height="4"/>
+    <rect x="128" y="112" width="10" height="4"/><rect x="128" y="132" width="10" height="4"/>
+    <rect x="128" y="152" width="10" height="4"/><rect x="128" y="172" width="10" height="4"/>
+    <rect x="128" y="192" width="10" height="4"/><rect x="128" y="212" width="10" height="4"/>
+  </g>
+  <text x="100" y="130" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#374151" transform="rotate(-90 100 130)">encaixes a cada 1 polegada</text>
+  <rect x="146" y="60" width="330" height="12" fill="#374151"/>
+  <text x="490" y="71" font-family="Arial" font-size="13" fill="#374151">prateleira de cima</text>
+  <rect x="146" y="200" width="330" height="12" fill="#374151"/>
+  <text x="490" y="211" font-family="Arial" font-size="13" fill="#374151">prateleira de baixo</text>
+  <line x1="310" y1="198" x2="310" y2="74" stroke="#dc2626" stroke-width="3"/>
+  <polygon points="310,74 303,88 317,88" fill="#dc2626"/>
+  <polygon points="310,198 303,184 317,184" fill="#dc2626"/>
+  <text x="326" y="130" font-family="Arial" font-size="14" font-weight="bold" fill="#dc2626">mede este espa&ccedil;o:</text>
+  <text x="326" y="148" font-family="Arial" font-size="13" fill="#374151">do topo da prateleira de baixo</text>
+  <text x="326" y="164" font-family="Arial" font-size="13" fill="#374151">&#8594; at&eacute; &agrave; base da prateleira de cima</text>
+</svg>
+<div class="figcap">Altura da prateleira = o espaço livre entre prateleiras. Os encaixes prendem a passos de 1 polegada.</div>
+</div>
+
+<div class="tip"><b>Lembra-te:</b> as etiquetas ficam sempre com o produto — movem-se juntas, nunca separadas.</div>
+
+<h2>Lista Rápida de Verificação</h2>
+<ol class="steps">
+  <li>Encontra o código de localização na etiqueta (por baixo do preço unitário).</li>
+  <li>Lê do grande para o pequeno: corredor &#8594; lado &#8594; bay &#8594; prateleira &#8594; posição.</li>
+  <li>Corredor = número pendurado. Lado: de costas para a frente da loja, os lados correspondem aos teus braços.</li>
+  <li>Bay 1 à esquerda; prateleira 1 em baixo; posição 1 é a primeira a contar da esquerda.</li>
+  <li>Medir: topo da prateleira de baixo &#8594; base da prateleira de cima; encaixes = 1 polegada cada.</li>
+</ol>
+
+</div>
+
+<div class="ftr">
+  <div class="quote">"Para cultivar a felicidade, semeia gratidão."</div>
+  <div><b>Tyson Gauthier</b> — Supervisor, Retail Odyssey &middot; Fred Meyer &middot; (509) 903-6702 &middot; tyson.gauthier@retailodyssey.com</div>
+  <div class="home"><a href="index.html">&#8592; Voltar &agrave; p&aacute;gina principal</a></div>
+</div>
+
+</div>
+</body>
+</html>
